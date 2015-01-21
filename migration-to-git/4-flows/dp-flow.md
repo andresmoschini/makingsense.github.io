@@ -152,11 +152,11 @@ Sprint `N` starts. In the planning we choose a lot of nice features to implement
         $ git ffetch
         $ git checkout integration
         $ git merge --no-ff qa
-        $ git tfs rcheckin -i integration
+        $ git tfs rcheckin --no-build-default-comment -i integration
         $ git push upstream integration:integration
         $ git checkout develop
         $ git merge --no-ff integration
-        $ git tfs rcheckin -i develop
+        $ git tfs rcheckin --no-build-default-comment -i develop
         $ git push upstream develop:develop
         ```
 
